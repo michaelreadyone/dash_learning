@@ -8,7 +8,8 @@ import plotly.express as px
 import os
 
 # filename = 'data/Urban_Park_Ranger_Animal_Condition_Response.csv' # this doesn't work
-filename = os.path.join(os.path.dirname(__file__), 'data/Urban_Park_Ranger_Animal_Condition_Response.csv')
+relative_path = os.path.abspath('')
+filename = relative_path + '/CharmingData/data/Urban_Park_Ranger_Animal_Condition_Response.csv'
 df = pd.read_csv(filename)
 
 # you need to include __name__ in your Dash constructor if
