@@ -1,11 +1,5 @@
 #------------------------------------------------------delete this section and add your own mapbox token below
-import yaml #(pip install pyyaml)
-import os
-with open("config.yml", 'r') as ymlfile:
-    cfg = yaml.load(ymlfile, Loader=yaml.FullLoader)
-mapbox_access_token = cfg['mysql']['key']
-#-------------------------------------------------------
-# mapbox_access_token = 'insert_your_mapbox_token_here'
+mapbox_access_token = 'pk.eyJ1IjoibWlrZWNvb2tkYXRhIiwiYSI6ImNreHNocmcyYzU5Y3IyeXFxbWh2ZjR6aDMifQ.xszFiLPsiW4F_dR6O52q0A'
 
 import pandas as pd
 import numpy as np
@@ -14,6 +8,7 @@ import dash_table
 import dash_core_components as dcc
 import dash_html_components as html
 from dash.dependencies import Input, Output
+import os
 
 import plotly.offline as py     #(version 4.4.1)
 import plotly.graph_objs as go
